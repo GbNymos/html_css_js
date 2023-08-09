@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trabalhando com links</title>
+</head>
+<body>
+    <h1>pagina principal</h1>
+    <h2>usando lik externo</h2>                                     
+    <p>curso em video link: <a href="https://www.cursoemvideo.com/" hreflang="pt-br">site test</a></p> <!--dessa forma ele ira sobrepor o meu site  e o hreflag ira dizer o idioma original do link-->
+<!-- com o parametro target, ele abri uma janela no navegador-->
+    <p>indo para o mesmo site dessa vez ele ira abri uma nova janela: <a href="https://www.cursoemvideo.com/" target="_blank">site test</a></p>
+<h2>links internos </h2>
+<p> vou ir para minha segunda pagina <a href="pagina.html">segunda pagina</a></p>
+<p>vou ir para uma pagina que esta dentro da pasta noticia <a href="noticias/pag03.html">noticias</a></p>
+<hr>
+<h2>usando link para downloads</h2>
+<ol>
+    <li><a href="noticias/cousera.pdf" download="cousera.pdf" type="aplication/pdf">download do pdf</a> <!--o navegador nao fez o dowload de forma padrao-->
+     <li><a href="noticias/cousera.zip" download="cousera.zip" type="aplication/zip">o pdf agora em arquivo zip</a> <!-- fara o dowload normalmente-->
+</ol>
+</body>
+</html>

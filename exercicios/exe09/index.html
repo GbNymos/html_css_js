@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>midias</title>
+</head>
+<body>
+    <h1>imagens flexiveis</h1>
+    <p>imagem que fica flexivel ao mudar o tamanhi da tela.</p>
+    <picture>
+        <source media="(max-width:700px)" srcset="img/foto-p.png" type="image/png">
+        <source media="(max-width:1000px)" srcset="img/foto-m.png" type="image/png">
+        <img src="img/foto-g.png" alt="imagem grande">
+    </picture>
+    <hr>
+
+    <h1>utilizando audio</h1>
+    <p>reproduzindo audio jeito simples:</p>
+    <!--<audio src="audio/Bageshri - Aditya Verma.mp3" controls autoplay ></audio>-->
+
+    <p>jeito um pouco mais complexo</p>
+    <audio controls>
+        <source src="audio/Bageshri - Aditya Verma.mp3" type="audio/mpeg">
+        <source src="audio/Bageshri - Aditya Verma.ogg" type="audio/ogg">
+        <!--podemos colocar outros  formatos aqui no caso:mp3,ogg e wav-->
+    </audio>
+
+    <hr>
+    <h1>videos</h1>
+    <p>colocando video direto no meu site (nao e recomendavel) </p>
+
+    <hr>
+    <h1>colocando video</h1>
+    <p>em hospedagem local:</p>
+   <!-- <video src="video/pexels-vision-plug-15698543 (1080p).mp4" width="500" controls poster="img/foto-p.png"></video>-->
+
+<p>forma mais abragente</p>
+<video controls width="500">
+    <source src="video/pexels-vision-plug-15698543 (1080p).mp4" type="video/mp4">
+    <!--colocar outro tipo de formatos do mesmo video para abranger outros navegadores que
+    nao sao compativeis com formatos mp4 por exmplo-->
+</video>
+
+<h1>hospegem externa</h1>
+<p>utilizando o servico do youtube</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/OzUnqQk4eOg" 
+title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+allowfullscreen></iframe>
+

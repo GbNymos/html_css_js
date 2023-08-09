@@ -1,0 +1,16 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+body{
+
+    font-family:chewy, Arial;
+    font-size: 2em;
+    font-style: italic;
+}
+/* fonte de forma baixada */
+@font-face {
+    font-family:"anime" ;
+    src: url(font/Anime.otf) format(opentype); /* poderia colocar mais url, do mesmo arquivo mas com o format diferente ,por exemplo. */
+}
+h2{
+    font-family: "anime",arial,serif;
+}

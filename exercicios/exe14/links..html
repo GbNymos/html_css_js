@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo element</title>
+    <style>
+        a{
+            text-decoration: none;
+        }
+        a:visited{
+            color: brown;
+        }
+        /* amtes do texto oq ele vai escrever */
+        a::before{
+            content: "-clique-";
+        }
+        /*depois do texto oq ele vai escrever. */
+        a::after{
+            content: "--link";
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>links personalizados</h1>
+    <ul>
+        <li><a href="http//cursoemvideo.com">curso em video</a></li>
+        <li><a href="https://30praum.com/">loja</a></li>
+    </ul>
+    
+</body>
+</html>

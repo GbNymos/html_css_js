@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formatcao de texto</title>
+    <style>
+        mark{
+            background-color: rgb(77, 77, 118);
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>principais formatacoes</h1>
+    <h2>negrito|destaque</h2>
+    <p>
+        nessa frase temos um <strong>texto em negrito com a tag semantica</strong>
+    </p>
+    <p>nessa o termo <b>esta em negrito mas nao e de forma semantica</b></p>
+    <h2>italico|enfase</h2>
+    <p>italico sem semantica: <i>termo italico</i>e isso. </p>
+    <p>italico com semantica: <em>termo italico</em>e isso.</p>
+    <h2>marcador de texto</h2>
+    <p>
+        <mark>para grifar uma palavra OU UMA FRASE , TEXTO... utilizamos o MARK</mark>
+    </p>
+     <p>
+        <mark style="background-color: aquamarine;">grifando novamente pois usei outra forma para mudar unicamente essa cor do marcador.</mark>
+    </p>
+    <h2>texto grande e texto pequeno</h2>
+    <p>
+        um texto um <big>pouco grande com o  BIG </big> nao e semantico e e obsoleto.
+    </p>
+    <p>
+        um texto <small>um pouco pequeno com o SMALL</small> e semantico
+    </p>
+    <p>
+        <del>um texto deletado com linha no meio </del> com o DELL.
+    </p>
+    <p>
+        <ins>um texto sublinhado com o INS</ins> forma semantica
+    </p>
+
+    <p> <u>   texto sublinhado com a tag U  </u> FORMA  nao semantica
+    </p>
+    
+    <p>
+        texto sobrescrito tag SUP:x<sup> 2</sup>+3
+    </p>
+    <p>
+        texto subescrito com a tag SUB : H<sub>2</sub>O
+    </p>
+    <h1>outras formatacoes</h1>
+    <h2>trecho de codigo</h2>
+    <p>
+        para colocar um codigo de maneira mas legivel <br>
+        utilize a tag CODE(semantica) <br>
+        exemplo: <code> frase = " ola mundo"
+            print("ola mundo")
+        </code>
+        <h3>para colocar o codigo do jeito certo cm identacao utlize a tag PRE.</h3>
+        <p>exemplo codigo em python: </p>
+        <pre>
+            <code>
+            frase = " ola mundo"
+            print("ola mundo")
+            </code>
+        </pre>
+    </p>
+    <h2>abreviacoes</h2>
+    <p>
+        para colocar siglas e colocar o significado utlize a tag ABBR. <br>
+        <abbr title="hipertext mark languagem">html</abbr>
+    </p>
+    <h2>texto invertido</h2>
+    <p>
+        <bdo dir="rtl">ola mundo </bdo>
+    </p>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo-class</title>
+    <style>
+        body{
+            background-color: rgb(102, 102, 131);
+        }
+        .test{
+            display: inline-block;
+            background-color: aqua;
+            width: 200px;
+            height: 200px;
+            border: 2px solid  black;
+        }
+        /* coloquei as div em uma classe e quando o mouse passar ela ficara vermelha  */
+        .test:hover{
+           background-color: brown;
+        }
+
+        div#esconde > p{  /* display=esconde o texto do paragrafo que esta dentro da div (div > p) */
+            display: none;
+        }
+        div#esconde:hover > p{ /* aqui ele mostra o paragrafo quando colocar o mouse em cima.) */
+            display: block;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <h1>exemplo de pseudo-class</h1>
+    <div class="test">01</div>
+    <div class="test">02</div>
+    <div class="test">03</div>
+<h1>texto escondido</h1>  
+<div id="esconde" >
+    passe o mouse 
+<p>esse texto estava escondido</p>
+</div>
+<div id="esconde">
+    <img src="https://th.bing.com/th/id/R.901b1e0f88dd8026cb65d6731ac73755?rik=l%2bRaSXM%2bzj3dNg&riu=http%3a%2f%2fpluspng.com%2fimg-png%2ftiny-flowers-png-download-596.png&ehk=j2ed7ucOi6DspLAvnFUUN%2baszHoX9j%2fTvnb%2ftLgtGlo%3d&risl=&pid=ImgRaw&r=0" alt="img teste">
+    <p>essa e uma flor , custa mil reais</p>
+</div>
+</body>
+</html>
