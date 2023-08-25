@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo tabela</title>
+    <style>
+        table{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            border-collapse:collapse;
+        }
+        #tab2{
+            height: 400px;
+        }
+        tr.outra>td{
+            background-color: rgba(0, 255, 255, 0.697);
+            text-align: center;  /* Para alinhamento horizontalmente:center,right,left*/
+            vertical-align: bottom;/* Para alinhamento vertical:top,middle,bottom*/
+        }
+        tr>td.numero{
+           text-align: right;
+        }
+        td{ 
+            border: 1px solid black;
+            width: 200px;
+            padding: 3px;
+        }
+        .linha{
+            background-color: darkgrey;
+        }
+        #especial{
+            background-color: rgba(139, 0, 0, 0.777);
+        }
+    </style>
+</head>
+<body>
+    <h1>TABELA</h1>
+    <table>
+        <tr >
+            <td>A1</td>      <!--LER-SE COLUNA A LINHA 1, e assim por diante-->   
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr class="linha">
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+        <tr>
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+        <tr class="linha">
+            <td>A4</td>
+            <td>B4</td>
+            <td>C4</td>
+        </tr>
+        <tr id="especial">
+            <td>A5</td>
+            <td>B5</td>
+        
+        </tr>
+    </table>
+    <h1>TABELA 02</h1>
+    <table id="tab2">
+        <tr class="outra">
+            <td>A1</td>      <!--LER-SE COLUNA A LINHA 1, e assim por diante-->   
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr class="outra">
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+        <tr class="outra">
+            <td>A3</td>
+            <td class="numero">300</td>
+            <td>C3</td>
+        </tr>
+        <tr class="outra">
+            <td>A4</td>
+            <td class="numero">400</td>
+            <td>C4</td>
+        </tr>
+
+</body>
+</html>
