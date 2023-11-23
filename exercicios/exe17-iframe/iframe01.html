@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navegacao no iframe</title>
+    <style>
+        iframe{
+            height: 300px;
+            width: 95vw;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="./iframe.html" target="nav">Primeira pagina</a></li>
+        <li><a href="../desafio-13_tabelas/tabel1.html" target="nav">segunda pagina</a></li>
+        <li><a href="../desafio-13_tabelas/tabela2.html" target="nav">terceira pagina</a></li>
+    </ul>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero libero soluta modi porro sit sapiente voluptatibus ex beatae aspernatur deleniti consequuntur inventore, nam ratione nesciunt ipsam autem fugit corporis aut.
+
+    <iframe src="" frameborder="0" name="nav" srcdoc="<h1> escolha uma das opcoes acima :) </h1>"></iframe>
+</body>
+</html>
