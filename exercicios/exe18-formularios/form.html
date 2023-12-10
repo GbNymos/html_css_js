@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aprendendo formulario</title>
+</head>
+<body>
+    <h1>formulario</h1>
+    <form action="cadastro.py" autocomplete="off" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" name="name" id="nome" autocomplete="username" maxlength="15" required ><br>
+
+        <label for="sobrenome">sobrenome:</label>
+        <input type="text" name="nome" id="sobrenome" size="15" required><br>
+
+        <label for="senha">senha</label>
+        <input type="password" name="senha" id="senha" required placeholder="digite uma senha" minlength="8" maxlength="10"><br>
+
+        <label for="num">sua idade</label>
+        <input type="number" name="number" id="num" step="1"><br>
+
+        <label for="nascimento">data de nascimento</label>
+        <input type="date" name="date" id="nascimento">
+
+
+
+       <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="limpar">
+       </p>
+
+    
+
+    </form>
+</body>
+</html>
