@@ -8,6 +8,8 @@
 <body>
     <h1>formulario</h1>
     <form action="cadastro.py" autocomplete="off" method="post">
+    <fieldset>
+        <legend>dados pessoais</legend>
         <label for="nome">Nome:</label>
         <input type="text" name="name" id="nome" autocomplete="username" maxlength="15" required ><br>
 
@@ -22,7 +24,18 @@
 
         <label for="nascimento">data de nascimento</label>
         <input type="date" name="date" id="nascimento">
-
+    </fieldset>
+    <fieldset>
+        <legend>sexo biologico</legend>
+        <input type="radio" name="sexo" id="masculino"><label for="masculino">masculino</label>
+        <input type="radio" name="sexo" id="feminino"><label for="feminino">feminino</label>
+    </fieldset>
+    <fieldset>
+        <legend>esportes favoritos</legend>
+        <input type="checkbox" name="futebol" id="futebol"><label for="futebol">futebol</label><br>
+        <input type="checkbox" name="volei" id="volei"><label for="volei">volei</label><br>
+        <input type="checkbox" name="basquete" id="basquete"><label for="basquete">basquete</label>
+    </fieldset>
 
 
        <p>

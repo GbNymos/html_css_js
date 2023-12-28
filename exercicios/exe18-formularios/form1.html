@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<body>
+
+    <input type="number" name="" id="n1" required 
+     oninput="soma.innerHTML= Number(n1.value)+ Number(n2.value)">
+    <input type="number" id="n2" required 
+    oninput="soma.innerHTML = Number(n1.value)+ Number(n2.value)">
+
+    <output id="soma">0</output>
+    
+
+    <input type="submit" name="" id="">
+    <input type="reset">
+
+
+    <p>
+        <input type="range" min="1" max="10" value="5" id="val" oninput="valor.innerHTML=Number(val.value)">
+        <output id="valor">5</output>
+    </p>
+
+    <p>
+        em que ano vc nasceu?
+        <input type="number" name="" id="ano" oninput="calcidade()">
+   
+            sua idade e :
+            <output id="idade">0</output>
+  
+        
+    </p>
+</body>
+<script>
+    function calcidade(){
+
+        var atual_ano= new Date().getFullYear()
+        idade.innerHTML=Number(atual_ano)- Number(ano.value)
+    }
+</script>
+</html>
