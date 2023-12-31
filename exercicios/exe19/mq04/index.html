@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/estilo.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="estilos/midiaquery.css">
+    <title>Meu site</title>
+</head>
+<body onresize="mudoutamanho()">
+    <header>
+        <h1>Meu site</h1>
+        <span class="material-symbols-outlined" id="list" onclick="clickmenu()"> Lists </span>
+        <menu id="iten">
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">pagina1</a></li>
+                <li><a href="#">pagina2</a></li>
+                <li><a href="#">pagina3</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <h2>Ola,mundo!</h2>
+        <article>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Animi corporis sed possimus doloremque porro itaque dolorum soluta ipsum quos aspernatur, 
+                nihil autem facilis asperiores, 
+                recusandae voluptate ad. Sed, accusantium nemo.</p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Culpa dolorem quod hic sed odio saepe optio tenetur nobis ex aliquid nemo impedit libero,
+                     itaque est et fuga pariatur ipsa! Voluptatum.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab repudiandae dolores 
+                    inventore ratione doloremque cumque ullam suscipit distinctio
+                     tempore animi iure enim assumenda facere, reiciendis quod voluptate hic dolor repellendus.
+                </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Animi corporis sed possimus doloremque porro itaque dolorum soluta ipsum quos aspernatur, 
+                    nihil autem facilis asperiores, 
+                    recusandae voluptate ad. Sed, accusantium nemo.</p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Culpa dolorem quod hic sed odio saepe optio tenetur nobis ex aliquid nemo impedit libero,
+                         itaque est et fuga pariatur ipsa! Voluptatum.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab repudiandae dolores 
+                        inventore ratione doloremque cumque ullam suscipit distinctio
+                         tempore animi iure enim assumenda facere, reiciendis quod voluptate hic dolor repellendus.
+                    </p>
+        </article>
+    </main>
+    
+</body>
+<script>
+    function mudoutamanho() {
+        if (window.innerWidth >=768){
+            iten.style.display="block";
+        } else{
+            iten.style.display="none";
+        }
+
+    }
+    function clickmenu() {
+        if (iten.style.display=="block"){
+            iten.style.display= "none";
+
+        }else{
+            iten.style.display="block";
+        }
+    }
+</script>
+</html>
