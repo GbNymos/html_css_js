@@ -1,0 +1,60 @@
+@charset "utf-8";
+
+/* media queries */
+
+
+@media print {
+    img{
+        border-style: solid;
+        border-color: black;
+    }
+        
+img#pc{display:none;}
+img#telefone{display:none;}
+img#impressora{display:block;}
+img#tablet{display:none;}
+img#tv{display:none;}
+
+}
+
+
+@media screen and (min-width:768px) and (max-width:992px){
+    body{
+        background-image: url(../img/back-tablet.jpg)
+    };
+
+    
+img#pc{display:none;}
+img#telefone{display:none;}
+img#impressora{display:none;}
+img#tablet{display:block;}
+img#tv{display:none;}
+}
+
+
+
+@media screen and (min-width:992px) and (max-width:1200px){
+    body{
+        background-image: url(../img/back-pc.jpg)
+    };
+
+    img#pc{display:block;}
+    img#telefone{display:none;}
+    img#impressora{display:none;}
+    img#tablet{display:none;}
+    img#tv{display:none;}
+
+}
+
+
+@media screen and (min-width:1200px) {
+    body{
+        background-image: url(../img/back-tv.jpg)
+    };
+
+    img#pc{display:none;}
+    img#telefone{display:none;}
+    img#impressora{display:none;}
+    img#tablet{display:none;}
+    img#tv{display: block;}
+}
