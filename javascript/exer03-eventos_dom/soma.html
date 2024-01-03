@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>soma</title>
+</head>
+<body>
+    <h1>Somando valores</h1>
+    <label for="n1"></label>
+    <input type="number" id="n1"> 
+    <label for="n2">+</label>
+    <input type="number" id="n2"> 
+
+    <input type="submit" value="somar" onclick="somar()">
+
+    <div id="resp">
+        resposta
+        
+    </div>
+    
+
+
+
+<script>
+    function somar(){
+        var n1 = document.getElementById("n1").value // pegar o valor do elemento
+        var n2= document.getElementById("n2").value
+        var soma=Number(n1)+Number(n2)              // converte para numero. poderia fazer ... (n1.value) e tirar o value de cima.
+        var resp=document.getElementById("resp").innerText=soma  // mostra a resposta na tela
+
+
+       
+       
+    }
+</script>
+</body>
+</html>

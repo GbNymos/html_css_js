@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+    <style>
+        body{
+            background-color: aquamarine;
+            font: normal 20pt arial;
+            color: black;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>aprendendo DOM</h1>
+    <p>
+        estou aprendendo dom
+    </p>
+    <div name="imsg">
+        click em mim
+    </div>
+    <div id="msg" >
+        -Aqui vai minha mensagem
+    </div>
+    
+
+
+    <script>
+        var text= window.document.getElementsByTagName("p")[0];
+        document.write("essse e o resultado: "+ text.innerText)
+        text.style.color="blue" /* pegar meu elemento que esta guardado na variavel
+         text e modifica a cor da letra, mudando o estilo com js*/
+        document.body.style.backgroundColor="black";
+        document.body.style.color="grey";
+
+        var pelo_id=document.getElementById("msg");
+        pelo_id.innerText="ola,pessoal"
+
+        var pelo_name=document.getElementsByName("imsg")[0].style.color="red"
+
+    </script>
+</body>
+</html>
