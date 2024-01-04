@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEtran</title>
+</head>
+<body>
+    <h1>Sistemas de multas</h1>
+    <label for="velocidade">digite a velocidade do carro:</label>
+    <input type="number" id="velocidade" >Km/h
+    <input type="button" value="Aperte" onclick="resultado()">
+
+    <div id="resul">
+
+    </div>
+</body>
+
+
+<script>
+    function resultado(){
+        var velocidade= document.getElementById("velocidade").value
+        var resul=document.getElementById("resul")
+        
+        
+        if (velocidade>60){
+            resul.innerHTML="Multado"
+        }else{
+            resul.innerHTML="nao foi multado"
+            resul.innerHTML +="<p> continue assim! </p>"
+        }
+    }
+
+</script>
+</html>
