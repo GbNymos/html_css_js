@@ -1,4 +1,4 @@
-let amigos ={nome:"gabi", peso:50,engorda(){
+let amigos ={nome:"gabi", peso:50,engorda() {
     console.log("engordou")
 
 } }
